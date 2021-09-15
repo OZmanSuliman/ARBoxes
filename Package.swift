@@ -22,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "ARBoxes",
-            resources: [.copy("Scenes"),.copy("main.storyboard"),.copy("box.png")]
+            resources: [.copy("Resources/Scenes"),.copy("Resources/main.storyboard"),.copy("Resources/box.png")]
         ),
         .testTarget(
             name: "ARBoxesTests",

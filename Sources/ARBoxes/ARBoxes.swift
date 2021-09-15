@@ -120,7 +120,6 @@ extension ARBoxes: UICollectionViewDelegateFlowLayout {
         let lay = collectionViewLayout as! UICollectionViewFlowLayout
 //             the number 3 representing number of items in screen
         let widthPerItem = collectionView.frame.width / 3 - lay.minimumInteritemSpacing
-             
         return CGSize(width: widthPerItem, height: 128)
     }
 }

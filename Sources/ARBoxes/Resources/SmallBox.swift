@@ -3,14 +3,13 @@
 // GENERATED CONTENT. DO NOT EDIT.
 //
 
+import Combine
 import Foundation
 import RealityKit
 import simd
-import Combine
 
 @available(iOS 13.0, macOS 10.15, *)
 public enum SmallBox {
-
     public enum LoadRealityFileError: Error {
         case fileNotFound(String)
     }
@@ -55,13 +54,8 @@ public enum SmallBox {
     }
 
     public class Box: RealityKit.Entity, RealityKit.HasAnchoring {
-
         public var steelBox: RealityKit.Entity? {
-            return self.findEntity(named: "Steel Box")
+            return findEntity(named: "Steel Box")
         }
-
-
-
     }
-
 }
